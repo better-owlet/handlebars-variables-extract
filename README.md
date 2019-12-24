@@ -10,10 +10,6 @@
 ### Usage
 
 ```bash
-git clone https://github.com/a-owl/handlebars-variables-extract.git YOURFOLDERNAME
-cd YOURFOLDERNAME
-
-# Run npm install and write your library name when asked. That's all!
 npm install handlebars-variables-extract
 ```
 
@@ -21,6 +17,34 @@ npm install handlebars-variables-extract
 import extract from 'handlebars-variables-extract';
 extract(`{{template}}`);
 ```
+
+[CDN](https://unpkg.com/handlebars-variables-extract)
+
+`<script src="https://unpkg.com/handlebars-variables-extract@1.0.0/dist/handlebars-variables-extract.umd.js"></script>`
+
+input
+
+```html
+<p>{{firstname}} {{lastname}}</p>
+```
+
+output like JSON schema https://json-schema.org/
+
+```json
+{
+  "type": "object",
+  "properties": {
+    "firstname": {
+      "type": "any"
+    },
+    "lastname": {
+      "type": "any"
+    }
+  }
+}
+```
+
+[DEMO](https://a-owl.github.com/handlebars-variables-extract)
 
 ## Contributing
 

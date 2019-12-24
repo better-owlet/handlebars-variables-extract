@@ -25,7 +25,7 @@
   "scripts": {
     "lint": "tslint  --project tsconfig.json -t codeFrame 'src/**/*.ts' 'test/**/*.ts'",
     "prebuild": "rimraf dist",
-    "build": "tsc --module commonjs && rollup -c rollup.config.ts && typedoc --out docs --target es6 --theme minimal --mode file src",
+    "build": "tsc --module commonjs && rollup -c rollup.config.js && typedoc --out docs --target es6 --theme minimal --mode file src",
     "start": "rollup -c rollup.config.js -w",
     "test": "jest --coverage",
     "test:watch": "jest --coverage --watch",
@@ -123,8 +123,6 @@
     "typescript": "^3.0.3"
   },
   "peerDependencies": {
-    "handlebars": "^4.5.3",
-    "lodash": "^4.17.15"
-  },
-  "dependencies": {}
+    "handlebars": ">=3.0.3"
+  }
 }
