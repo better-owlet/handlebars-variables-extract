@@ -44,7 +44,7 @@ output like JSON schema https://json-schema.org/
 }
 ```
 
-[DEMO](https://a-owl.github.com/handlebars-variables-extract)
+[DEMO](https://a-owl.github.io/handlebars-variables-extract/example/index.html)
 
 ## Contributing
 
